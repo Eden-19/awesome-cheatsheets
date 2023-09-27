@@ -43,10 +43,15 @@ git branch -a                      # List all local and remote branches
 git cherry-pick <commit_id>                     # merge the specified commit
 git cherry-pick <commit_id_A>^..<commit_id_B>   # pick the entire range of commits where A is older than B ( the ^ is for including A as well )
 
-git remote                         # shows the remotes
-git remote -v                      # shows the remote for pull and push
-git remote add my-remote <address> # creates a remote (get the address from your git-server)
-git remote rm my-remote            # Remove a remote
+git remote                          # shows the remotes
+git remote -v                       # shows the remote for pull and push
+git remote add my-remote <address>  # creates a remote (get the address from your git-server)
+git remote rm my-remote             # Remove a remote
+
+git remote get-url origin           # show address of remote origin
+git remote set-url origin <address> # change remote origin address
+
+# Vedi un esempio  https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
 
 git log                      # shows the log of commits
 # git log by default uses less command so you can use these: f=next page, b=prev page, search=/<query>, n=next match, p=prev match, q=quit
