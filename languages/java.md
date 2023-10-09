@@ -24,18 +24,29 @@ public class HelloWorld {
 
 ### DATA TYPES
 
-|   Type  |      Set of values      |            Values            | Operators |
-|:-------:|:-----------------------:|:----------------------------:|:---------:|
-|  short  |         integers        | between -2^15 and + (2^15)-1 | + - * / % |
-|   int   |         integers        | between -2^31 and + (2^31)-1 | + - * / % |
-|  long   |         integers        | between -2^63 and + (2^63)-1 | + - * / % |
-|  float  |         integers        |     real numbers 32 bit      |  + - * /  |
-|  double |  floating-point numbers |     real numbers 64 bit      |  + - * /  |
-| boolean |      boolean values     |         true or false        | && \|\| ! |
-|   char  |        characters       |         16 bit               |           |
-|  String | sequences of characters |it's not a primitive data type|           |
+|   Type  |      Set of values      |       Values                    | Operators |
+|:-------:|:-----------------------:|:-------------------------------:|:---------:|
+|  short  |         integers        | between -2^15 and + (2^15)-1    | + - * / % |
+|   int   |         integers        | between -2^31 and + (2^31)-1    | + - * / % |
+|  long   |         integers        | between -2^63 and + (2^63)-1    | + - * / % |
+|  float  |         integers        |   real numbers 32 bit           |  + - * /  |
+|  double |  floating-point numbers |   real numbers 64 bit           |  + - * /  |
+| boolean |      boolean values     |     true or false               | && \|\| ! |
+|   char  |        characters       |     16 bit                      |           |
+|  String | sequences of characters | it's not a primitive data type  |           |
 
 
+Per 
+```shell
+echo 'String.format("Min: %d,Max: %d",Integer.MIN_VALUE,Integer.MAX_VALUE);'| jshell
+```
+
+```
+|  Welcome to JShell -- Version 17.0.8.1
+|  For an introduction type: /help intro
+
+jshell> String.format("Min: %d,Max: %d",Integer.MIN_VALUE,Integer.MAX_VALUE)$1 ==> "Min: -2147483648,Max: 2147483647"
+```
 ### DECLARATION AND ASSIGNMENT STATEMENTS
 
 ```java
