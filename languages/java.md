@@ -4,9 +4,10 @@
 //Text file name HelloWorld.java
 public class HelloWorld {
   // main() is the method
-  public static void main (String[] args)
-    //Prints "Hello World" in the terminal window.
-    System.out.println("Hello World");
+  public static void main (String[] args) {
+      //Prints "Hello World" in the terminal window.
+      System.out.println("Hello World");
+  }
 }
 ```
 
@@ -297,7 +298,7 @@ for(dataType item : array) {
 
 ### ACCESS MODIFIERS
 
-1. defualt(No keyword required)
+1. default(No keyword required)
 2. private
 3. public
 4. protected
@@ -384,7 +385,7 @@ class MyClass {
         }
 }
 ```
->DECLARING CLASSESS IMPLEMENTATING AN INTERFACE AND EXTENDING PARENT CLASS
+>DECLARING CLASSES IMPLEMENTING AN INTERFACE AND EXTENDING PARENT CLASS
 ```java
 class MyClass extends MySuperClass implements YourInterface {
     // field, constructor, and
@@ -396,7 +397,7 @@ class MyClass extends MySuperClass implements YourInterface {
 > CONSTRUCTORS
 * A class contains constructors that are invoked to create objects from the class blueprint.
 * Constructor declarations look like method declarations—except that they use the name of the class and have no return type
-* Each and every class has defualt No-args constructor.
+* Each and every class has default No-args constructor.
 
 
 ```java
@@ -431,15 +432,15 @@ class MyClass extends MySuperClass implements YourInterface {
   public class Circle {
 
     public void draw(){
-      System.out.println("Drwaing circle with default color Black and diameter 1 cm.");
+      System.out.println("Drawing circle with default color Black and diameter 1 cm.");
     }
 
     public void draw(int diameter){ //method draw() overloaded.
-      System.out.println("Drwaing circle with default color Black and diameter"+diameter+" cm.");
+      System.out.println("Drawing circle with default color Black and diameter"+diameter+" cm.");
     }
 
     public void draw(int diameter, String color){ //method draw() overloaded.
-      System.out.println("Drwaing circle with color"+color+" and diameter"+diameter+" cm.");
+      System.out.println("Drawing circle with color"+color+" and diameter"+diameter+" cm.");
     }
   }
 ```
@@ -458,7 +459,7 @@ class MyClass extends MySuperClass implements YourInterface {
 
       @Override
       public void draw(){
-        System.out.println("Drwaing circle");
+        System.out.println("Drawing circle");
       }
 
     }
@@ -529,8 +530,8 @@ class MyClass extends MySuperClass implements YourInterface {
     }
 
     public class Lily extends Flower{
-        private String Smell(){ // implementation of abstarct method.
-          System.out.println("Lily smell's lovender.");
+        private String Smell(){ // implementation of abstract method.
+          System.out.println("Lily smell's lavender.");
         }
     }
 ```
